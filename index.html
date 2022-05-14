@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>WikiGuessr - Andrew Klosterman</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body onload="buildPage()">
+	<div id="game-container">
+		<div id="option-one" class="option">
+			<div class="img-container"><img id="article-one-img" src=""></div>
+			<h2 id="article-one-title"></h2>
+			<p id="article-one-text"></p>
+		</div>
+		<div id="middle-box">
+			<div id="info-and-controls">
+				<p id="score-line"><img class="emoji" src="resources/star.png"> <span id="score">0</span>/10</p>
+				<p id="lives-line"><img id="third-life" class="emoji heart" src="resources/redheart.png"><img id="second-life" class="emoji heart" src="resources/redheart.png"><img id="first-life" class="emoji heart" src="resources/redheart.png"></p>
+				<button id="advance-button" onclick="newRound()">New Game</button>
+				<div id="controls-container"></div>
+			</div>
+			<div id="game-info">
+				<h2>Welcome to Wikiguessr</h2>
+				<p style="font-weight: bold">Warning: This game will not work properly (at all) with an ad-blocker enabled. I promise I won't show you any ads!</p><br>
+				<p>This game is a web-based recreation of <a href="https://ludokultur.itch.io/wikiarena">WikiArena</a> by Fabian Fischer. Two random Wikipedia articles will apear on the screen. You will have two options to select for each article. You can guess that one article has recieved more views in the last month, or you can guess that one article is longer. You have 3 lives, and your goal is to survive 10 rounds. Good luck!</p>
+			</div>
+		</div>
+		<div id="option-two" class="option">
+			<div class="img-container"><img id="article-two-img" src=""></div>
+			<h2 id="article-two-title"></h2>
+			<p id="article-two-text"></p>
+		</div>
+		<div id="score"></div>
+	</div>
+	<script src="app.js" type="text/javascript"></script>
+</body>
+</html>

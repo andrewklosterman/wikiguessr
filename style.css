@@ -1,0 +1,155 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #F6F6F6;
+}
+#game-container {
+	margin: 100px auto;
+	width: 70%;
+	max-width: 1500px;
+	display: flex;
+	align-items: top;
+}
+.option {
+	height: 100%;
+	width: 35%;
+	padding: 20px;
+	background-color: #FFFFFF;
+	border: 1px solid #A7D7F9;
+}
+#middle-box {
+	margin: 0px 50px;
+	width: 30%;
+}
+#score-line {
+	line-height: 80px;
+	font-size: 4em;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+.img-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 300px;
+	width: 100%;
+	background-color: #F8F9FA;
+	border: 1px solid #A2A9B1
+}
+img {
+	vertical-align: bottom;
+	max-width: 90%;
+	max-height: 270px;
+}
+h2 {
+	font-size: 1.8em;
+	font-family: "Georgia", serif;
+	font-weight: normal;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #A2A9B1;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+p {
+	line-height: 1.5em;
+	font-family: "Arial";
+}
+#score-line {
+	font-family: "Georgia", serif;
+}
+button {
+	font-size: 1.1em;
+	font-family: sans-serif;
+	margin-bottom: 15px;
+}
+button:hover {
+	cursor: pointer;
+}
+#info-and-controls {
+	text-align: center;
+}
+#info-and-controls p {
+	width: 100%;
+	padding-bottom: 30px;
+}
+#reveal-length {
+	width: 100%;
+	position: relative;
+	top: 55px;
+}
+#reveal-views {
+	width: 100%;
+	position: relative;
+	top: 95px;
+}
+#left-views, #left-length {
+	position: absolute;
+	left: 0px;
+	font-size: 1.1em;
+}
+#right-views, #right-length {
+	position: absolute;
+	right: 0px;
+	font-size: 1.1em;
+}
+.emoji {
+	height: 80px;
+	width: 80px;
+}
+.heart {
+	margin: 0px 15px;
+}
+button img {
+	width: 40px;
+	height: 40px;
+	margin: 10px;
+}
+#info-and-controls button {
+	width: 160px;
+	height: 50px;
+	margin-top: 20px;
+	display: inline-flex;
+}
+#advance-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#northwest, #southwest {
+	float: left;
+	display: inline-flex;
+	justify-content: left;
+	align-items: center;
+}
+#northeast, #southeast {
+	float: right;
+	justify-content: right;
+	align-items: center;
+}
+.inactive {
+	background-color: #C1C1C1;
+}
+.inactive:hover {
+	cursor: default;
+}
+
+@media only screen and (max-width: 1900px) {
+
+#game-container {
+	width: 90%;
+	margin: 30px auto;
+}
+#option-one, #option-two {
+	margin: 10px;
+}
+.img-container {
+	display: none;
+}
+
+}
